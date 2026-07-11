@@ -3,259 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jude Randeniya — Disaster Resilience &amp; Institutional AI</title>
-<meta name="description" content="Jude Nilantha Randeniya — PhD Candidate, Global Disaster Resilience Centre, University of Huddersfield. Research on institutional AI adoption, climate risk, and disaster resilience.">
+<title>Jude Randeniya — Researcher &amp; Educator, Disaster Resilience and Institutional AI</title>
+<meta name="description" content="Jude Nilantha Randeniya — Researcher, Global Disaster Resilience Centre, University of Huddersfield. Institutional Mediation Principle, AI governance, climate and disaster risk.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --ink:#14181A;
-    --paper:#F6F1E7;
-    --deep:#182A2D;
-    --deep-2:#213B3E;
-    --ochre:#C1752B;
-    --teal:#3E6B63;
-    --line:#D8CFBC;
-    --line-dark:rgba(246,241,231,0.18);
-    --muted:#5B5A52;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Inter',sans-serif;
-    font-size:16px;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
-  }
-  a{color:inherit;}
-  h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;letter-spacing:-0.01em;}
-  .eyebrow{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:0.72rem;
-    letter-spacing:0.12em;
-    text-transform:uppercase;
-    color:var(--ochre);
-  }
-  .wrap{max-width:1080px;margin:0 auto;padding:0 32px;}
-
-  /* NAV */
-  nav{
-    position:sticky;top:0;z-index:50;
-    background:rgba(246,241,231,0.92);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-  }
-  nav .wrap{
-    display:flex;align-items:center;justify-content:space-between;
-    height:64px;
-  }
-  .nav-name{font-family:'Fraunces',serif;font-weight:500;font-size:1.05rem;text-decoration:none;}
-  .nav-links{display:flex;gap:28px;list-style:none;}
-  .nav-links a{
-    text-decoration:none;font-size:0.85rem;color:var(--ink);
-    font-weight:500;position:relative;padding-bottom:4px;
-  }
-  .nav-links a::after{
-    content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--ochre);
-    transition:width 0.25s ease;
-  }
-  .nav-links a:hover::after,.nav-links a:focus-visible::after{width:100%;}
-  .nav-toggle{display:none;background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--ink);}
-  @media (max-width:760px){
-    .nav-links{
-      position:absolute;top:64px;left:0;right:0;
-      background:var(--paper);border-bottom:1px solid var(--line);
-      flex-direction:column;padding:20px 32px;gap:16px;
-      display:none;
-    }
-    .nav-links.open{display:flex;}
-    .nav-toggle{display:block;}
-  }
-
-  /* HERO */
-  header.hero{
-    background:
-      radial-gradient(ellipse at 15% 20%, rgba(193,117,43,0.12), transparent 55%),
-      var(--deep);
-    color:var(--paper);
-    position:relative;
-    overflow:hidden;
-    padding:96px 0 88px;
-  }
-  .contour-field{
-    position:absolute;inset:0;opacity:0.35;pointer-events:none;
-  }
-  .hero .wrap{position:relative;z-index:2;}
-  .hero-coord{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:0.72rem;
-    letter-spacing:0.1em;
-    color:#E8DCC4;
-    opacity:0.75;
-    margin-bottom:22px;
-    display:flex;align-items:center;gap:10px;
-  }
-  .hero-coord .dot{width:6px;height:6px;border-radius:50%;background:var(--ochre);display:inline-block;}
-  h1.name{
-    font-size:clamp(2.6rem,6vw,4.4rem);
-    line-height:1.02;
-    color:var(--paper);
-  }
-  h1.name em{
-    font-style:normal;color:var(--ochre);
-  }
-  .hero-role{
-    margin-top:18px;
-    font-size:clamp(1.05rem,2vw,1.3rem);
-    color:#E8DCC4;
-    max-width:640px;
-    font-weight:400;
-  }
-  .hero-sub{
-    margin-top:14px;
-    font-size:0.98rem;
-    color:#BFC9C4;
-    max-width:600px;
-  }
-  .hero-actions{
-    margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;
-  }
-  .btn{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:0.78rem;letter-spacing:0.04em;
-    text-decoration:none;
-    padding:12px 22px;
-    border-radius:2px;
-    display:inline-block;
-    transition:transform 0.2s ease, background 0.2s ease;
-  }
-  .btn-primary{background:var(--ochre);color:var(--deep);font-weight:600;}
-  .btn-primary:hover{transform:translateY(-2px);}
-  .btn-ghost{border:1px solid var(--line-dark);color:var(--paper);}
-  .btn-ghost:hover{border-color:var(--ochre);color:var(--ochre);}
-
-  /* SECTIONS */
-  section{padding:88px 0;border-bottom:1px solid var(--line);}
-  section:last-of-type{border-bottom:none;}
-  .section-head{margin-bottom:44px;max-width:640px;}
-  .section-head h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-top:8px;}
-  .section-head p.desc{margin-top:14px;color:var(--muted);}
-
-  /* ABOUT */
-  .about-grid{
-    display:grid;grid-template-columns:1.3fr 1fr;gap:64px;align-items:start;
-  }
-  @media (max-width:760px){.about-grid{grid-template-columns:1fr;}}
-  .about-grid p{margin-bottom:16px;color:#2B2A26;}
-  .stat-card{
-    border:1px solid var(--line);
-    background:#FBF8F1;
-    padding:20px 22px;margin-bottom:14px;
-  }
-  .stat-card .num{
-    font-family:'Fraunces',serif;font-size:1.9rem;color:var(--teal);
-  }
-  .stat-card .label{
-    font-family:'IBM Plex Mono',monospace;font-size:0.72rem;
-    letter-spacing:0.05em;text-transform:uppercase;color:var(--muted);
-    margin-top:4px;
-  }
-
-  /* NETWORK / ROLES */
-  .network{
-    display:flex;flex-direction:column;gap:0;
-    border-left:1px solid var(--line);
-    margin-left:6px;
-  }
-  .node{
-    position:relative;padding:0 0 40px 34px;
-  }
-  .node:last-child{padding-bottom:0;}
-  .node::before{
-    content:"";position:absolute;left:-6.5px;top:2px;
-    width:12px;height:12px;border-radius:50%;
-    background:var(--paper);border:2px solid var(--ochre);
-  }
-  .node .when{
-    font-family:'IBM Plex Mono',monospace;font-size:0.72rem;
-    color:var(--ochre);letter-spacing:0.05em;text-transform:uppercase;
-  }
-  .node h3{font-size:1.15rem;margin-top:6px;}
-  .node p{color:var(--muted);margin-top:6px;max-width:560px;font-size:0.95rem;}
-
-  /* RESEARCH CARDS */
-  .research-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--line);border:1px solid var(--line);}
-  @media (max-width:760px){.research-grid{grid-template-columns:1fr;}}
-  .research-card{background:var(--paper);padding:32px;}
-  .research-card .idx{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:var(--ochre);}
-  .research-card h3{font-size:1.15rem;margin-top:10px;}
-  .research-card p{color:var(--muted);margin-top:10px;font-size:0.94rem;}
-
-  /* PUBLICATIONS */
-  .pub{
-    border-bottom:1px solid var(--line);
-    padding:22px 0;
-    display:grid;grid-template-columns:110px 1fr;gap:24px;
-  }
-  @media (max-width:600px){.pub{grid-template-columns:1fr;gap:6px;}}
-  .pub:last-child{border-bottom:none;}
-  .pub .year{font-family:'IBM Plex Mono',monospace;color:var(--teal);font-size:0.9rem;}
-  .pub h3{font-size:1.05rem;font-weight:500;}
-  .pub .venue{color:var(--muted);font-size:0.9rem;margin-top:4px;font-style:italic;}
-  .pub .status{
-    display:inline-block;margin-top:8px;
-    font-family:'IBM Plex Mono',monospace;font-size:0.68rem;
-    text-transform:uppercase;letter-spacing:0.05em;
-    padding:3px 8px;border:1px solid var(--line);color:var(--muted);
-  }
-
-  /* CONTACT / FOOTER */
-  footer{
-    background:var(--deep);color:var(--paper);padding:72px 0 40px;
-  }
-  footer h2{color:var(--paper);font-size:clamp(1.8rem,3.4vw,2.6rem);}
-  footer p.desc{color:#BFC9C4;margin-top:14px;max-width:520px;}
-  .contact-links{margin-top:36px;display:flex;flex-direction:column;gap:14px;}
-  .contact-links a{
-    text-decoration:none;font-size:1rem;color:var(--paper);
-    display:flex;align-items:center;gap:12px;
-    border-bottom:1px solid var(--line-dark);padding-bottom:10px;width:fit-content;
-    min-width:260px;
-    transition:color 0.2s ease, border-color 0.2s ease;
-  }
-  .contact-links a:hover{color:var(--ochre);border-color:var(--ochre);}
-  .contact-links .k{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#8FA39D;width:70px;flex-shrink:0;}
-  .foot-bottom{
-    margin-top:64px;padding-top:24px;border-top:1px solid var(--line-dark);
-    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
-    font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#8FA39D;
-  }
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav>
+<nav class="site-nav">
   <div class="wrap">
-    <a class="nav-name" href="#top">Jude Randeniya</a>
+    <a class="nav-name" href="index.html"><span class="dot"></span>Jude Randeniya</a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#roles">Roles</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching &amp; Service</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </nav>
 
-<header class="hero" id="top">
+<header class="hero">
   <svg class="contour-field" viewBox="0 0 1080 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <g fill="none" stroke="#E8DCC4" stroke-width="1">
       <path d="M -50 420 C 150 380, 300 460, 500 400 S 850 340, 1130 420" opacity="0.5"/>
@@ -266,191 +39,124 @@
     </g>
   </svg>
   <div class="wrap">
-    <div class="hero-coord"><span class="dot"></span>53.6461&#176; N, 1.7850&#176; W &mdash; Huddersfield, UK</div>
-    <h1 class="name">Jude Nilantha<br><em>Randeniya</em></h1>
-    <p class="hero-role">PhD Candidate, Global Disaster Resilience Centre, University of Huddersfield &mdash; researching why institutions adopt AI unevenly, and what that means for climate and disaster risk governance.</p>
-    <p class="hero-sub">Subject Leader at MMUIC &middot; Co-lead &amp; Secretary, IEEE P7021 &middot; Editor, The Field Journal</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#research">View research</a>
-      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    <div>
+      <div class="hero-coord"><span class="dot"></span>53.6461&#176; N, 1.7850&#176; W &mdash; Huddersfield, UK</div>
+      <h1 class="name">Jude Nilantha<br><em>Randeniya</em></h1>
+      <p class="hero-role">Researching why institutions adopt AI unevenly under climate risk &mdash; and building the standards and teaching that close that gap.</p>
+      <div class="hero-tags">
+        <span class="tag">Researcher</span>
+        <span class="tag">Educator</span>
+        <span class="tag accent">Co-Lead, IEEE P7021</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="research.html">View research</a>
+        <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-portrait">
+      <img src="assets/profile.png" alt="Portrait of Jude Nilantha Randeniya">
     </div>
   </div>
 </header>
 
-<section id="about">
+<section id="snapshot">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">About</span>
-      <h2>Institutions, AI, and the resilience gap</h2>
+    <div class="section-head reveal">
+      <span class="eyebrow">Snapshot</span>
+      <h2>The gap, in numbers</h2>
+      <p class="desc">Government agencies with the greatest responsibility for climate and disaster management show the lowest adoption of AI prediction technologies &mdash; despite comparable infrastructure to academic institutions. This is the empirical base behind that finding.</p>
     </div>
-    <div class="about-grid">
-      <div>
-        <p>Jude is a final-year PhD candidate at the Global Disaster Resilience Centre, University of Huddersfield, supervised by Professor Richard Haigh and Professor Dilanthi Amaratunga (Loughborough University). His research centres on the <strong>Institutional Mediation Principle</strong>: an explanation for why government agencies adopt artificial intelligence far more slowly and unevenly than academic institutions, despite having comparable infrastructure.</p>
-        <p>The work draws on 45 semi-structured interviews, five focus groups, and over 100 policy documents collected across Australia, the UK, and Sri Lanka &mdash; including fieldwork carried out under a Turing Scheme placement at Western Sydney University. The framework was validated by 53 international experts at a Royal Academy of Engineering Frontiers Symposium in Tokyo.</p>
-        <p>Alongside the PhD, Jude is Subject Leader for Analytical Techniques and Introduction to Programming at Manchester Metropolitan University International College, Co-lead and Secretary of IEEE P7021 on ethical AI in climate projections, and Editor of The Field Journal at the University of Huddersfield.</p>
+    <div class="stat-row reveal">
+      <div class="stat-cell"><div class="num">2.1 / 4.0</div><div class="label">Gov vs academic AI readiness score</div></div>
+      <div class="stat-cell"><div class="num">45</div><div class="label">Semi-structured interviews</div></div>
+      <div class="stat-cell"><div class="num">100+</div><div class="label">Policy documents reviewed</div></div>
+      <div class="stat-cell"><div class="num">53</div><div class="label">Experts validating the framework, Tokyo</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about-preview">
+  <div class="wrap">
+    <div class="two-col">
+      <div class="reveal">
+        <span class="eyebrow">About</span>
+        <h2 style="margin-top:8px;font-size:clamp(1.5rem,2.6vw,2rem);">Institutions, AI, and the resilience gap</h2>
+        <p style="margin-top:18px;">Jude is a researcher at the Global Disaster Resilience Centre, University of Huddersfield, working with Professor Richard Haigh and Professor Dilanthi Amaratunga at Loughborough University. His work centres on the <strong>Institutional Mediation Principle</strong>, developed from fieldwork across the UK, Australia, and Sri Lanka, including a Visiting Research Fellowship at Western Sydney University's Centre for Smart Modern Construction.</p>
+        <p>Alongside the research, he teaches at Manchester Metropolitan University International College, co-leads an IEEE standards working group on ethical AI in climate projections, and edits Fields, the University of Huddersfield's student research journal.</p>
+        <a href="about.html" style="font-family:'IBM Plex Mono',monospace;font-size:0.82rem;color:var(--teal);text-decoration:none;border-bottom:1px solid var(--teal);padding-bottom:3px;">Read the full story &rarr;</a>
       </div>
-      <div>
-        <div class="stat-card"><div class="num">45</div><div class="label">Semi-structured interviews</div></div>
-        <div class="stat-card"><div class="num">100+</div><div class="label">Policy documents reviewed</div></div>
-        <div class="stat-card"><div class="num">3</div><div class="label">Countries &mdash; Australia, UK, Sri Lanka</div></div>
-        <div class="stat-card"><div class="num">53</div><div class="label">Experts validating the framework, Tokyo</div></div>
+      <div class="reveal">
+        <div class="stat-card"><div class="num">3</div><div class="label">Countries &mdash; UK, Australia, Sri Lanka</div></div>
+        <div class="stat-card"><div class="num">5</div><div class="label">Focus groups conducted</div></div>
+        <div class="stat-card"><div class="num">2023&ndash;</div><div class="label">Doctoral researcher, Huddersfield</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="research">
+<section id="research-preview">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">Research</span>
       <h2>Current lines of work</h2>
-      <p class="desc">From institutional theory to applied climate-health modelling, the through-line is the same question: how do we build AI systems that institutions can actually trust and use under disaster and climate risk.</p>
+      <p class="desc">From institutional theory to applied climate-health modelling, the through-line is the same question: how do we build AI systems institutions can actually trust and use under disaster and climate risk.</p>
     </div>
-    <div class="research-grid">
+    <div class="research-grid reveal">
       <div class="research-card">
         <div class="idx">01</div>
         <h3>Institutional AI Readiness Framework</h3>
-        <p>Doctoral research explaining the adoption gap between government agencies (scoring 2.1/5) and academic institutions (4.0/5) on equivalent infrastructure. Currently in rebuttal at AIES 2026.</p>
+        <p>Doctoral research explaining the adoption gap between government agencies and academic institutions on equivalent infrastructure. Currently in rebuttal at AIES 2026.</p>
       </div>
       <div class="research-card">
         <div class="idx">02</div>
         <h3>AI4CASCADE</h3>
-        <p>Artificial Intelligence for Compound Climate and Health Cascade Predictions &mdash; a NERC IRF application hosted at Loughborough, modelling compound drought&ndash;flood&ndash;health cascades across the UK and Sri Lanka.</p>
+        <p>A NERC Independent Research Fellowship application modelling compound drought&ndash;flood&ndash;health cascades across the UK and Sri Lanka, hosted at Loughborough University.</p>
       </div>
       <div class="research-card">
         <div class="idx">03</div>
         <h3>Temperature Extremes &amp; Respiratory Mortality</h3>
-        <p>Joint explainable ML project with Nelum Bopitiyegedara and Lahiru Kodithuwakku, linking HadUK-Grid temperature data to ONS weekly respiratory mortality records. Now in feature engineering.</p>
+        <p>Explainable machine learning project linking UK temperature data to weekly respiratory mortality records, with Nelum Bopitiyegedara and Lahiru Kodithuwakku.</p>
       </div>
       <div class="research-card">
         <div class="idx">04</div>
         <h3>Urban Vulnerability, Sri Lanka</h3>
-        <p>Two papers in development: an urban morphological assessment for the International Journal of Disaster Resilience in the Built Environment, and a polycentric vulnerability study of Colombo for Cities (Elsevier).</p>
+        <p>Two papers in development on AI-based urban morphological assessment, covering Colombo, Kurunegala, and Galle.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="roles">
+<section class="cta-band" style="border-bottom:none;">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Roles &amp; Leadership</span>
-      <h2>Where the work happens</h2>
-    </div>
-    <div class="network">
-      <div class="node">
-        <div class="when">Ongoing</div>
-        <h3>Global Disaster Resilience Centre, University of Huddersfield</h3>
-        <p>PhD candidate under Professor Richard Haigh and Professor Dilanthi Amaratunga, targeting submission in October 2026.</p>
-      </div>
-      <div class="node">
-        <div class="when">Ongoing</div>
-        <h3>Subject Leader, MMUIC</h3>
-        <p>Leads Analytical Techniques and Introduction to Programming at Manchester Metropolitan University International College, including exam design, marking schemes, and student guidance materials.</p>
-      </div>
-      <div class="node">
-        <div class="when">Since Dec 2025</div>
-        <h3>IEEE P7021 &mdash; Co-lead &amp; Secretary</h3>
-        <p>Standards working group on ethical AI in climate projections. Co-created the approved PAR for the standard.</p>
-      </div>
-      <div class="node">
-        <div class="when">Ongoing</div>
-        <h3>Editor, The Field Journal</h3>
-        <p>University of Huddersfield student publication; currently leading the PGR edition.</p>
-      </div>
-    </div>
+    <h2>Open to collaboration on institutional AI governance and disaster resilience research.</h2>
+    <a class="btn btn-primary" href="contact.html">Start a conversation</a>
   </div>
 </section>
 
-<section id="publications">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Publications</span>
-      <h2>Selected work</h2>
-    </div>
-    <div class="pub-list">
-      <div class="pub">
-        <div class="year">2026</div>
-        <div>
-          <h3>Beyond Accuracy: Institutional AI Readiness Framework</h3>
-          <div class="venue">AIES 2026 &mdash; Submission ID 810</div>
-          <span class="status">In rebuttal</span>
-        </div>
-      </div>
-      <div class="pub">
-        <div class="year">&mdash;</div>
-        <div>
-          <h3>Urban Morphological Assessment, Sri Lanka</h3>
-          <div class="venue">International Journal of Disaster Resilience in the Built Environment</div>
-          <span class="status">In preparation</span>
-        </div>
-      </div>
-      <div class="pub">
-        <div class="year">&mdash;</div>
-        <div>
-          <h3>Polycentric Vulnerability in Colombo</h3>
-          <div class="venue">Cities (Elsevier)</div>
-          <span class="status">In preparation</span>
-        </div>
-      </div>
-      <div class="pub">
-        <div class="year">&mdash;</div>
-        <div>
-          <h3>Explainable ML for Temperature Extremes and Respiratory Mortality</h3>
-          <div class="venue">With N. Bopitiyegedara &amp; L. Kodithuwakku</div>
-          <span class="status">In progress</span>
-        </div>
-      </div>
-      <div class="pub">
-        <div class="year">Earlier</div>
-        <div>
-          <h3>AI and climate change prediction</h3>
-          <div class="venue">Book chapter</div>
-          <span class="status">Published</span>
-        </div>
-      </div>
-      <div class="pub">
-        <div class="year">Earlier</div>
-        <div>
-          <h3>Journal article</h3>
-          <div class="venue">AI and Ethics (Springer)</div>
-          <span class="status">Published</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer id="contact">
+<footer class="site-footer" id="contact">
   <div class="wrap">
     <span class="eyebrow" style="color:var(--ochre)">Contact</span>
     <h2>Let's talk resilience, AI, or both.</h2>
     <p class="desc">Open to collaboration on institutional AI governance, climate-health modelling, and disaster resilience research across the UK, Sri Lanka, and beyond.</p>
     <div class="contact-links">
-      <a href="mailto:your.email@hud.ac.uk"><span class="k">Email</span> your.email@hud.ac.uk</a>
-      <a href="#"><span class="k">LinkedIn</span> linkedin.com/in/yourprofile</a>
-      <a href="#"><span class="k">ORCID</span> orcid.org/0000-0000-0000-0000</a>
-      <a href="#"><span class="k">GDRC</span> University of Huddersfield</a>
+      <a href="mailto:rnilandeniya@gmail.com"><span class="k">Email</span> rnilandeniya@gmail.com</a>
+      <a href="https://www.linkedin.com/in/nilantharandeniya" target="_blank" rel="noopener"><span class="k">LinkedIn</span> linkedin.com/in/nilantharandeniya</a>
+      <a href="https://scholar.google.com/citations?user=WspfZRwAAAAJ&hl=en" target="_blank" rel="noopener"><span class="k">Scholar</span> Google Scholar profile</a>
     </div>
     <div class="foot-bottom">
       <span>&copy; 2026 Jude Nilantha Randeniya</span>
+      <div class="foot-links">
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="leadership.html">Leadership</a>
+      </div>
       <span>Huddersfield, UK</span>
     </div>
   </div>
 </footer>
 
-<script>
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-  navToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', isOpen);
-  });
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', 'false');
-  }));
-</script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
