@@ -62,10 +62,10 @@ nav.site-nav .wrap{
   text-decoration:none;display:flex;align-items:center;gap:10px;
 }
 .nav-name .dot{width:7px;height:7px;border-radius:50%;background:var(--ochre);display:inline-block;}
-.nav-links{display:flex;gap:26px;list-style:none;}
+.nav-links{display:flex;gap:19px;list-style:none;flex-wrap:wrap;justify-content:flex-end;}
 .nav-links a{
-  text-decoration:none;font-size:0.83rem;color:var(--ink);
-  font-weight:500;position:relative;padding-bottom:4px;
+  text-decoration:none;font-size:0.78rem;color:var(--ink);
+  font-weight:500;position:relative;padding-bottom:4px;white-space:nowrap;
 }
 .nav-links a::after{
   content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--ochre);
