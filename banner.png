@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer &amp; Community - Nilantha Randeniya</title>
+<meta name="description" content="Community and volunteer work by Nilantha Randeniya, including Shaping Heroes Foundation and Sahodarathwaye Manudama.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="nav-name" href="index.html"><span class="dot"></span>Nilantha Randeniya</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="early-life.html">Early Life</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching &amp; Service</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="volunteer.html" class="active">Volunteer</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <svg class="contour-field" viewBox="0 0 1080 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="none" stroke="#E8DCC4" stroke-width="1">
+      <path d="M -50 320 C 150 280, 300 360, 500 300 S 850 240, 1130 320" opacity="0.4"/>
+      <path d="M -50 280 C 150 240, 300 320, 500 260 S 850 200, 1130 280" opacity="0.3"/>
+      <path d="M -50 240 C 150 200, 300 280, 500 220 S 850 160, 1130 240" opacity="0.2"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Volunteer &amp; Community</div>
+    <h1>Volunteer &amp; Community</h1>
+    <p class="lede">Community work in Sri Lanka running alongside the research and teaching, from founding organisations to hands-on fundraising and school support.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Organisations</span>
+      <h2>Founded and co-founded</h2>
+    </div>
+    <div class="network reveal">
+      <div class="node">
+        <div class="when">2018 - Present</div>
+        <h3>Founder, Shaping Heroes Foundation</h3>
+        <p>A social development organisation focused on educational capacity-building for Sri Lankan schoolchildren, aiming to strengthen leadership and character alongside academic support.</p>
+      </div>
+      <div class="node">
+        <div class="when">2017 - Present</div>
+        <h3>Co-Founder &amp; Chief Planning and Fundraising Officer, Sahodarathwaye Manudama (Brotherhood for Humanity)</h3>
+        <p>A social support programme established to assist people who need help physically or mentally. Sahodarathwaye Manudama is the organisation's name in Sinhala; Brotherhood for Humanity is its English name.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Other Roles</span>
+      <h2>Committees and coordination</h2>
+    </div>
+    <div class="card-grid reveal">
+      <div class="card">
+        <span class="eyebrow">2020 - Present</span>
+        <h3>Sri Lankan Coordinator</h3>
+        <p>Sri Lanka - Canada Scholarship Foundation (SLCSF), a Canadian non-profit awarding scholarships to Sri Lankan children from low-income backgrounds who show academic promise.</p>
+      </div>
+      <div class="card">
+        <span class="eyebrow">2018 - 2021</span>
+        <h3>Vice President &amp; Treasurer</h3>
+        <p>Town &amp; Country Planning Student's Society (TCPSS), University of Moratuwa.</p>
+      </div>
+      <div class="card">
+        <span class="eyebrow">2019 - 2021</span>
+        <h3>Assistant President</h3>
+        <p>Catholic Student Movement, University of Moratuwa.</p>
+      </div>
+      <div class="card">
+        <span class="eyebrow">2020 - 2021</span>
+        <h3>HR Manager</h3>
+        <p>Mora Sprit, a university sports media and coverage organisation across Sri Lankan universities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">On the Ground</span>
+      <h2>Selected volunteer work</h2>
+    </div>
+    <div class="network reveal">
+      <div class="node">
+        <div class="when">2018 &amp; 2019</div>
+        <h3>Sri Pada pilgrimage for the blind</h3>
+        <p>Led a group of blind pilgrims on the walk from Moratuwa to Sri Pada (Adam's Peak).</p>
+      </div>
+      <div class="node">
+        <div class="when">Ongoing</div>
+        <h3>Tree-planting campaigns</h3>
+        <p>Wilpattu, Kalpitiya, Hawagala, and Bolgoda Lake, alongside several partner organisations.</p>
+      </div>
+      <div class="node">
+        <div class="when">Ongoing</div>
+        <h3>Rural school support</h3>
+        <p>Donated stationery and equipment, and ran motivational programmes, across roughly ten rural schools. Founded the "Mission" and "Deeptha" project series to support under-resourced schools, and developed computer laboratories for rural communities in Kohonawa, Madolsima, and Ohiya.</p>
+      </div>
+      <div class="node">
+        <div class="when">Ongoing</div>
+        <h3>Healthcare fundraising</h3>
+        <p>Took part in a fundraising walk for Apeksha Cancer Hospital, Maharagama, and contributed to donating roughly Rs. 600,000 in essential medicines to the hospital.</p>
+      </div>
+      <div class="node">
+        <div class="when">Since 2020</div>
+        <h3>Forest monasteries</h3>
+        <p>Helped build forest monasteries at Memure, Kalugala, Pulmudai, and Sewanagala.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">In Pictures</span>
+      <h2>The work itself</h2>
+    </div>
+    <div class="photo-grid reveal">
+      <figure>
+        <img src="assets/vol-school-children.jpg" alt="A rural school visited during a volunteer programme">
+        <figcaption>A rural school programme</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/vol-somewhere-belong.jpg" alt="With children in the hill country">
+        <figcaption>Somewhere I belong</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/vol-kids-selfie.jpg" alt="Close selfie with children from a rural community">
+        <figcaption>With the kids</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/vol-cleanup-group.jpg" alt="Environmental cleanup team on the mountain steps">
+        <figcaption>Environmental clean-up, hill country</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/vol-cleanup-bag.jpg" alt="Collecting waste during an environmental initiative">
+        <figcaption>Clearing collected waste</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/vol-fieldwork-team.jpg" alt="The team on a rural outreach visit">
+        <figcaption>The team, out in the field</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">In the UK</span>
+      <h2>Community life continues</h2>
+      <p class="desc">The same sense of community carries on in Huddersfield, celebrating Sri Lankan traditions with friends far from home.</p>
+    </div>
+    <div class="photo-feature reveal">
+      <img src="assets/community-huddersfield.jpg" alt="Sri Lankan New Year celebration with friends in Huddersfield">
+      <div>
+        <p>Sri and Tamil New Year, celebrated with friends in Huddersfield. A reminder that community does not stop at a border.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--ochre)">Contact</span>
+    <h2>Let's talk resilience, AI, or both.</h2>
+    <p class="desc">Open to collaboration on institutional AI governance, climate-health modelling, and disaster resilience research across the UK, Sri Lanka, and beyond.</p>
+    <div class="contact-links">
+      <a href="mailto:rnilandeniya@gmail.com"><span class="k">Email</span> rnilandeniya@gmail.com</a>
+      <a href="https://www.linkedin.com/in/nilantharandeniya" target="_blank" rel="noopener"><span class="k">LinkedIn</span> linkedin.com/in/nilantharandeniya</a>
+      <a href="https://scholar.google.com/citations?user=WspfZRwAAAAJ&hl=en" target="_blank" rel="noopener"><span class="k">Scholar</span> Google Scholar profile</a>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Nilantha Randeniya</span>
+      <div class="foot-links">
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="achievements.html">Achievements</a>
+      </div>
+      <span>Huddersfield, England, UK</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
