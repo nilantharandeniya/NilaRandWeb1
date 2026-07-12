@@ -1,116 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Achievements - Nilantha Randeniya</title>
-<meta name="description" content="Awards and recognitions of Nilantha Randeniya, from student honours to international research validation.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+// Shared site behaviour
 
-<nav class="site-nav">
-  <div class="wrap">
-    <a class="nav-name" href="index.html"><span class="dot"></span>Nilantha Randeniya</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="early-life.html">Early Life</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="teaching.html">Teaching &amp; Service</a></li>
-      <li><a href="leadership.html">Leadership</a></li>
-      <li><a href="volunteer.html">Volunteer</a></li>
-      <li><a href="achievements.html" class="active">Achievements</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+document.addEventListener('DOMContentLoaded', () => {
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }));
+  }
 
-<header class="page-header">
-  <svg class="contour-field" viewBox="0 0 1080 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <g fill="none" stroke="#E8DCC4" stroke-width="1">
-      <path d="M -50 320 C 150 280, 300 360, 500 300 S 850 240, 1130 320" opacity="0.4"/>
-      <path d="M -50 280 C 150 240, 300 320, 500 260 S 850 200, 1130 280" opacity="0.3"/>
-      <path d="M -50 240 C 150 200, 300 280, 500 220 S 850 160, 1130 240" opacity="0.2"/>
-    </g>
-  </svg>
-  <div class="wrap">
-    <div class="breadcrumb"><a href="index.html">Home</a> / Achievements</div>
-    <h1>Achievements</h1>
-    <p class="lede">From student honours at Moratuwa to international validation of doctoral research in Tokyo.</p>
-  </div>
-</header>
-
-<section>
-  <div class="wrap">
-    <div class="network reveal">
-      <div class="node">
-        <div class="when">2026</div>
-        <h3>Institutional Mediation Principle validated, RAEng Frontiers Symposium</h3>
-        <p>Presented to and validated by 53 international experts at the Royal Academy of Engineering Frontiers Symposium, Tokyo, scoring 3.84 out of 4.0.</p>
-      </div>
-      <div class="node">
-        <div class="when">2025</div>
-        <h3>Best Presentation Award, UKADR</h3>
-        <p>UK Alliance for Disaster Research annual conference.</p>
-      </div>
-      <div class="node">
-        <div class="when">2022</div>
-        <h3>Best Paper Award, ICBM</h3>
-        <p>International Conference on Business Management, University of Sri Jayewardenepura. Awarded for "Analysis of Private Student Accommodation and Rental Values around the University of Sri Jayewardenepura," combining planning expertise with computer science.</p>
-      </div>
-      <div class="node">
-        <div class="when">2022</div>
-        <h3>Success Story, Research Week</h3>
-        <p>University of Moratuwa. Recognised for an original and forward-thinking research concept.</p>
-      </div>
-      <div class="node">
-        <div class="when">2018</div>
-        <h3>Best Research Poster, FOSS4G Asia</h3>
-        <p>Free and Open Source Software for Geospatial conference, hosted at the University of Moratuwa.</p>
-      </div>
-      <div class="node">
-        <div class="when">2018</div>
-        <h3>University Colours in Badminton</h3>
-        <p>University of Moratuwa, Inter-University Games.</p>
-      </div>
-      <div class="node">
-        <div class="when">2018 - 2021</div>
-        <h3>Dean's List, Faculty of Architecture</h3>
-        <p>University of Moratuwa. Awarded four times across the degree for sustained academic performance.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer" id="contact">
-  <div class="wrap">
-    <span class="eyebrow" style="color:var(--ochre)">Contact</span>
-    <h2>Let's talk resilience, AI, or both.</h2>
-    <p class="desc">Open to collaboration on institutional AI governance, climate-health modelling, and disaster resilience research across the UK, Sri Lanka, and beyond.</p>
-    <div class="contact-links">
-      <a href="mailto:rnilandeniya@gmail.com"><span class="k">Email</span> rnilandeniya@gmail.com</a>
-      <a href="https://www.linkedin.com/in/nilantharandeniya" target="_blank" rel="noopener"><span class="k">LinkedIn</span> linkedin.com/in/nilantharandeniya</a>
-      <a href="https://scholar.google.com/citations?user=WspfZRwAAAAJ&hl=en" target="_blank" rel="noopener"><span class="k">Scholar</span> Google Scholar profile</a>
-    </div>
-    <div class="foot-bottom">
-      <span>&copy; 2026 Nilantha Randeniya</span>
-      <div class="foot-links">
-        <a href="about.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="volunteer.html">Volunteer</a>
-      </div>
-      <span>Huddersfield, England, UK</span>
-    </div>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
-</html>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && revealEls.length) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+});
